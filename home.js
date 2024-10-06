@@ -54,7 +54,7 @@ const starField = new THREE.Points(starsGeometry, starsMaterial);
 scene.add(starField);
 
 // Add clouds
-const cloudGeometry = new THREE.SphereGeometry(
+/*const cloudGeometry = new THREE.SphereGeometry(
   radius * 1.01,
   spherex,
   spherey
@@ -69,7 +69,7 @@ const cloudMaterial = new THREE.MeshPhongMaterial({
 });
 const clouds = new THREE.Mesh(cloudGeometry, cloudMaterial);
 clouds.position.x = -3; // Move the clouds with the planet
-scene.add(clouds);
+scene.add(clouds);*/
 
 // Animation loop
 function animate() {
