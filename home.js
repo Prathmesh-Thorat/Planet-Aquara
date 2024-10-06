@@ -54,22 +54,22 @@ const starField = new THREE.Points(starsGeometry, starsMaterial);
 scene.add(starField);
 
 // Add clouds
-/*const cloudGeometry = new THREE.SphereGeometry(
+const cloudGeometry = new THREE.SphereGeometry(
   radius * 1.01,
   spherex,
   spherey
 );
 const cloudTexture = new THREE.TextureLoader().load(
-  "https://i.imgur.com/ZLKcVvV.png"
+  "cloud.jpeg"
 );
 const cloudMaterial = new THREE.MeshPhongMaterial({
   map: cloudTexture,
   transparent: true,
-  opacity: 0.8,
+  opacity: 0,
 });
 const clouds = new THREE.Mesh(cloudGeometry, cloudMaterial);
 clouds.position.x = -3; // Move the clouds with the planet
-scene.add(clouds);*/
+scene.add(clouds);
 
 // Animation loop
 function animate() {
